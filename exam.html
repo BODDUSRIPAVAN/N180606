@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link rel="icon" href="examination.png">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+   <meta name="author" content="BODDU . SRI PAVAN">
+    <style>
+        div{
+            position:absolute;
+            top:10px;
+            left:350px;
+            height:90px;
+            width:700px;
+            border-radius:10px;
+            background:#00aeff;
+            border:2px solid black;
+            text-align:center;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        sub{
+            color:red;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            color:white;
+            background-color: rgb(46, 46, 46);
+        }
+        tr:hover{
+            background:yellow;
+        }
+    </style>
+    </head>
+    <body onload="chameleon_body()" bgcolor="black">
+    <div onmouseover="hovering()" onmouseout="non_hovering()" id="divi"><h1><u id="he">F1H20</u><sub id="hf">RGUKT</sub><h1></h1></div>
+    <br><br><br><br><br><br>
+    <form action="exam_completed.html" method="post" onsubmit="return submission();" >
+    <center>
+    <table bordercolor="white" id="tablee" onmouseover="return beer_fun()" cellspacing="0" cellpadding="3.85">
+        <tr>
+            <td>Username </td><td>:<input type="text" id="username" required oninput="return user()"></td>
+        </tr>
+        <tr>
+            <td>Email Id </td><td>:<input type="text" id="email" required oninput="return email_fun()"></td>
+        </tr>
+        <tr>
+            <td>Mobile No</td><td>:<input type="text" id="mobile" required oninput="return mobile_fun()"></td>
+        </tr>
+        <tr>
+            <td>Nation </td><td>: <select id="nation" required>
+                <option>India</option>
+                <option>America</option>
+                <option>England</option>
+                <option>Germany</option>
+                <option>Other Firm Representatives of RGUKT</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Beer </td><td>:<select id="beerok">
+                <option >Required</option>
+                <option>Not Required</option></select></td>
+        </tr>
+        <tr>
+            <td>DD No </td><td>:<input type="text" id="dd" required oninput="return dd_fun()"></td>
+        </tr>
+        <tr>
+        <td>Accommodation</td><td>: <input type="radio" id="N" name="rad" value="N"><label for="h1">INuzid</label></td>
+        <tr><td></td><td>&nbsp;&nbsp;<input type="radio" id="K" name="rad" value="K"><label for="h2">IKadapa</label></td></tr>
+        <tr><td></td><td>&nbsp;&nbsp;<input type="radio" id="S" name="rad" value="S"><label for="h3">ISKLM</label></td></tr>
+        <tr><td></td><td>&nbsp;&nbsp;<input type="radio" id="O" name="rad" value="O"><label for="h4">IONGOLE</label></td></tr>        
+        </tr>
+        <tr>
+            <tr><td>Services provided</td><td>: <input type="checkbox" id="h1"><label for="h1">breakfast</label></td>
+        <tr><td></td><td>&nbsp;&nbsp;<input type="checkbox" id="h2"><label for="h2">lunch</label></td></tr>
+        <tr><td></td><td>&nbsp;&nbsp;<input type="checkbox" id="h3"><label for="h3">snacks</label></td></tr>
+        <tr><td></td><td>&nbsp;&nbsp;<input type="checkbox" id="h4"><label for="h4">Tea</label></td></tr>
+        <tr><td></td><td>&nbsp;&nbsp;<input type="checkbox" id="h5"><label for="h5">Coffee</label></td></tr>
+        <tr><td></td><td>&nbsp;&nbsp;<input type="checkbox" id="h5"><label for="h5">Eggs</label></td></tr>
+        </tr>
+        <tr>
+            <td>No.of Days </td><td>:<input type="text" id="stay" required onchange="staying()"></td>
+        </tr>
+        <tr><td></td><td><input type="submit"></td></tr>
+    </table>
+    </center>
+    </form>
+    </div>
+    <script type="text/javascript" src="jexam.js"></script>
+    </body>
+</html>
